@@ -13,10 +13,52 @@
     />
   </head>
   <body class="bg-dark text-white">
-    <nav class="navbar navbar-dark bg-dark px-3">
-      <a href="index.html"
-        ><img src="/assets/netflix_logo.png" alt="logo" width="120"
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-3">
+      <a class="navbar-brand text-danger fw-bold" href="#"
+        ><img src="assets/netflix_logo.png" alt="netflix" width="100"
       /></a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recently Added</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <i class="bi bi-search text-white"></i>
+          <span>KIDS</span>
+          <i class="bi bi-bell-fill text-white"></i>
+          <div class="dropdown">
+            <div
+              class="d-flex align-items-center dropdown-toggle"
+              id="avatarDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              style="cursor: pointer"
+            >
+              <img src="/assets/avatar.png" alt="Avatar" width="30" />
+            </div>
+            <ul
+              class="dropdown-menu dropdown-menu-end bg-dark text-white"
+              aria-labelledby="avatarDropdown"
+            >
+              <li>
+                <a class="dropdown-item text-white" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-white" href="settings.html"
+                  >Settings</a
+                >
+              </li>
+              <li><hr class="dropdown-divider bg-secondary" /></li>
+              <li><a class="dropdown-item text-white" href="#">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
     <div id="container-main" class="container">
       <h1 class="p-1 mb-4">Edit Profile</h1>

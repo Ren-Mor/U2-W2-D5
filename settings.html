@@ -3,27 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Account Settings - Netflix</title>
+    <title>Settings</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="assets/settings.css" />
   </head>
-  <body class="bg-light">
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-black px-3">
-      <a class="navbar-brand text-danger fw-bold" href="#">NETFLIX</a>
+      <a class="navbar-brand text-danger fw-bold" href="#">
+        <img src="assets/netflix_logo.png" alt="netflix" width="100" />
+      </a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="text-white">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="text-white"><a class="nav-link" href="#">TV Shows</a></li>
-          <li class="text-white"><a class="nav-link" href="#">Movies</a></li>
-          <li class="text-white">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+          <li class="nav-item">
             <a class="nav-link" href="#">Recently Added</a>
           </li>
           <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
@@ -62,138 +64,183 @@
       </div>
     </nav>
 
-    <div class="container py-5">
-      <div class="d-flex justify-content-between align-items-center pb-4 mb-4">
-        <h3>Account</h3>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 col-lg-3 border-top border-secondary">
-            <h5 class="text-secondary">MEMBERSHIP & BILLING</h5>
-            <button class="btn">Cancel Membership</button>
+    <div id="main-container" class="container d-flex flex-column py-5">
+      <h2>Account</h2>
+
+      <div class="border-top pt-3"></div>
+      <section class="d-flex">
+        <div style="min-width: 190px">
+          <h6 class="text-muted mb-3">MEMBERSHIP & BILLING</h6>
+
+          <button class="btn btn-light border rounded-0 p-2">
+            Cancel Membership
+          </button>
+        </div>
+
+        <div class="row container-fluid">
+          <div class="col">
+            <p class="mb-1 fw-medium">student@strive.school</p>
+            <p class="mb-1 text-muted mb-1">Password: ********</p>
+            <p class="mb-1 text-muted mb-1">Phone: 321 044 1279</p>
           </div>
-          <div class="col-12 col-md-8 col-lg-9 border-top border-secondary">
-            <div class="row justify-content-between">
-              <div class="col-12 col-md-6 col-lg-3">
-                <p>
-                  <strong>student@strive.school</strong> <br />
-                  Password: ******* <br />Phone: 3210441279
-                </p>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <a href="#">Change account email</a><br /><a href="#"
-                  >Change password</a
-                ><br /><a href="#">Chane phone number</a>
-              </div>
-            </div>
-            <div
-              class="row justify-content-between border-top border-secondary"
-            >
-              <div class="col-12 col-md-6 col-lg-3">
-                <p>
-                  <i class="bi bi-paypal"></i
-                  ><strong>PayPal</strong> admin@strive.school
-                </p>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <a href="#">update payment info</a><br /><a href="#"
-                  >billing details</a
-                >
-              </div>
-            </div>
-            <div
-              class="row justify-content-between border-top border-secondary"
-            >
-              <div class="col-12 col-md-6 col-lg-3"></div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <a href="#">redeem gift card or promo code</a><br /><a href="#"
-                  >were to buy gift card</a
-                >
-              </div>
-            </div>
+          <div class="col text-end">
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Change account email</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Change password</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Change phone number</a>
+            </p>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="d-flex">
+        <div style="min-width: 190px"></div>
 
-      <div class="mb-4 pb-4 border-bottom">
-        <h5 class="text-uppercase text-muted">Plan Details</h5>
-        <div class="d-flex justify-content-between align-items-center">
-          <div><strong>Premium</strong> - Ultra HD</div>
-          <a href="#" class="text-primary text-decoration-none">Change plan</a>
-        </div>
-      </div>
-
-      <div class="mb-4 pb-4 border-bottom">
-        <h5 class="text-uppercase text-muted">Settings</h5>
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#" class="text-decoration-none d-block py-1"
-              >Parental Controls</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none d-block py-1"
-              >Test Participation</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none d-block py-1"
-              >Manage Download Devices</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none d-block py-1"
-              >Activate a Device</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none d-block py-1"
-              >Recent Device Streaming Activity</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none d-block py-1"
-              >Sign Out of All Devices</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <h5 class="text-uppercase text-muted">My Profile</h5>
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <div class="d-flex align-items-center">
-            <img
-              src="assets/avatar.png"
-              class="me-2"
-              alt="Profile"
-              width="30"
-            />
-            <strong>Mario</strong>
+        <div class="row container-fluid">
+          <div class="border-top pt-3"></div>
+          <div class="col">
+            <p class="col text-muted fw-bold text-nowrap">
+              <i class="bi bi-paypal"></i><i class="mx-2">PayPal</i
+              ><span class="text-dark">admin@strive.school</span>
+            </p>
           </div>
-          <a href="#" class="text-primary text-decoration-none"
-            >Manage Profiles</a
-          >
+          <div class="col text-end">
+            <p class="m-1">
+              <a href="#" class="text-decoration-none">Update payment info</a>
+            </p>
+            <p class="m-1">
+              <a href="#" class="text-decoration-none">Billing details</a>
+            </p>
+          </div>
         </div>
-        <ul class="list-unstyled mb-0">
-          <li>
-            <a href="#" class="text-decoration-none d-block py-1">Language</a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none d-block py-1"
-              >Viewing Activity</a
-            >
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none d-block py-1">Ratings</a>
-          </li>
-          <li>
-            <a href="#" class="text-decoration-none d-block py-1"
-              >Subtitle Appearance</a
-            >
-          </li>
-        </ul>
-      </div>
+      </section>
+
+      <section class="d-flex">
+        <div style="min-width: 190px"></div>
+
+        <div class="row container-fluid">
+          <div class="border-top pt-3"></div>
+          <div class="col">
+            <p class="col text-muted fw-bold text-nowrap"></p>
+          </div>
+          <div class="col text-end">
+            <p class="m-1">
+              <a href="#" class="text-decoration-none"
+                >Redeem gift card or promo code</a
+              >
+            </p>
+            <p class="m-1">
+              <a href="#" class="text-decoration-none"
+                >Where to buy gift cards</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="border-top pt-3"></div>
+      <section class="d-flex">
+        <div style="min-width: 190px">
+          <h6 class="text-muted mb-3">PLAN DETAILS</h6>
+        </div>
+        <div class="row container-fluid">
+          <div class="col">
+            <p class="mb-1 fw-medium">
+              <strong>Premium</strong>
+              <span
+                id="ultra-hd"
+                class="fw-light mx-2 px-1 border border-1 border-dark rounded"
+                >ULTRA HD</span
+              >
+            </p>
+          </div>
+          <div class="col text-end">
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Change plan</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="border-top pt-3"></div>
+      <section class="d-flex">
+        <div style="min-width: 190px">
+          <h6 class="text-muted mb-3">SETTINGS</h6>
+        </div>
+        <div class="row container-fluid">
+          <div class="col">
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Parental controls</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Test participation</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none"
+                >Manage download services</a
+              >
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Activate a device</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none"
+                >Recent device streaming activity</a
+              >
+            </p>
+            <p class="mb-3">
+              <a href="#" class="text-decoration-none">Sign out all devices</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="border-top pt-3"></div>
+      <section class="d-flex">
+        <div style="min-width: 190px">
+          <h6 class="text-muted mb-3">PLAN DETAILS</h6>
+        </div>
+        <div class="row container-fluid">
+          <div class="col">
+            <p class="mb-4">
+              <img src="assets/avatar.png" alt="Avatar" width="30" />
+              <span class="mx-2">Strive student</span>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Language</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Playback settings</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Subtitle appearance</a>
+            </p>
+          </div>
+          <div class="col">
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">&nbsp;</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">&nbsp;</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Viewing activity</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Ratings</a>
+            </p>
+          </div>
+          <div class="col text-end">
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Manage profiles</a>
+            </p>
+            <p class="mb-1">
+              <a href="#" class="text-decoration-none">Add profile email</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="border-top pt-3"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
